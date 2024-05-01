@@ -1,0 +1,23 @@
+server:
+  port: 9081
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: ${broker}:${port}
+          configuration:
+            sasl:
+              mechanism: PLAIN
+              jaas:
+                config: ${password}
+            security:
+              protocol: SASL_SSL
+      bindings:
+        receive-in-0:
+          destination: hub-csm-file-report-queue
+        supply-out-0:
+          destination: hub-csm-file-report-queue
+    function:
+      definition: receive

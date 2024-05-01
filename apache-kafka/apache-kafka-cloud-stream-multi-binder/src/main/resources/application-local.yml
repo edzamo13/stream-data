@@ -1,0 +1,45 @@
+server:
+  port: 9080
+
+spring:
+  cloud:
+    function:
+      definition: receive;consume # Definición de las funciones que se utilizarán
+    stream:
+      bindings:
+        payment-out-0:
+          destination: hub-csm-file-payment-event
+          binder: kafka1  # Configuración del binder kafka1 para este binding
+        receive-in-0:
+          destination: hub-csm-file-payment-event
+          binder: kafka1  # Configuración del binder kafka1 para este binding
+        report-out-0:
+          destination: hub-csm-file-report-queue
+          binder: kafka2  # Configuración del binder kafka2 para este binding
+        consume-in-0:
+          destination: hub-csm-file-report-queue
+          binder: kafka2  # Configuración del binder kafka2 para este binding
+
+      # Configuración personalizada de los binders kafka1 y kafka2
+      kafka:
+        binder:
+          brokers: ${broker}:${port}
+          configuration:
+            security.protocol: SASL_SSL
+            sasl.mechanism: PLAIN
+            sasl.jaas.config: ${kafka.jaas.config}
+
+      binders:
+        kafka1:
+          type: kafka
+          environment:
+            kafka:
+              jaas:
+                config: ${password1}
+
+        kafka2:
+          type: kafka
+          environment:
+            kafka:
+              jaas:
+                config: ${password2}
