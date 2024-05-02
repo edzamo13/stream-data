@@ -20,7 +20,7 @@ public class ConsumeEvents {
     }
 
     public void processMessage(Message<String> message) {
-      log.info("Receiving1 " + message);
+      log.info("Receiving payment " + message);
     }
 
     @Bean
@@ -30,7 +30,7 @@ public class ConsumeEvents {
     }
 
     public void processMessageConsume(Message<String> message) {
-      log.info("Receiving 2" + message.getPayload());
+      log.info("Receiving report" + message.getPayload());
     }
 
 

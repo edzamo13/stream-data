@@ -16,5 +16,9 @@ public class  Bridge {
     log.info("===> sendMessage ");
     streamBridge.send("report-out-0", obj);
   }
+  public void sendMessagePayment(Object obj) {
+    log.info("===> sendMessage ");
+    streamBridge.send("payment-out-0", obj);
+  }
 
 }

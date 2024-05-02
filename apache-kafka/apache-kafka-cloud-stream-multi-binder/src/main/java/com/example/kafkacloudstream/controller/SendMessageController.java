@@ -18,9 +18,8 @@ public class SendMessageController {
   @PostMapping("api/send")
   public Mono<ResponseEntity<String>> sendMessage() {
 
-    log.info("try send message report !..");
-    this.produceEvents.sendReport("I send Message.. for report-out-0:  ");
-    log.info("try send message payment !..");
+
+   // this.produceEvents.sendReport("I send Message.. for report-out-0:  ");
     this.produceEvents.sendPayment("I send Message.. payment-out-0: ");
 
 
