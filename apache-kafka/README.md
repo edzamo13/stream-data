@@ -4,8 +4,13 @@
 For further reference, please consider the following sections:
 
 * [Spring Cloud](https://github.com/spring-cloud/spring-cloud-stream-samples)
+<<<<<<< HEAD
 * [Spring cloud Stream example](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-Kafka-cloud-stream)
 * [Spring cloud Multiple binder](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-kafka-cloud-stream-multi-binder
+=======
+* [Spring Cloud Stream example](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-Kafka-cloud-stream)
+* [Spring Cloud Stream Multiple binder](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-kafka-cloud-stream-multi-binder)
+>>>>>>> fea0609d7f96b6628711f711d1c58ebae6c5920c
 * [Spring Reactive Web](https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#web.reactive)
 
 
