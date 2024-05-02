@@ -3,14 +3,11 @@
 ### Reference Documentation
 For further reference, please consider the following sections:
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.2.5/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.2.5/gradle-plugin/reference/html/#build-image)
+* [Spring Cloud Stream](https://github.com/spring-cloud/spring-cloud-stream-samples)
+* [Spring cloud Stream](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-Kafka-cloud-stream)
+* [Spring cloud Stream multiple binder ](https://github.com/edzamo13/stream-data/tree/main/apache-kafka/apache-kafka-cloud-stream-multi-binder
 * [Spring Reactive Web](https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#web.reactive)
-* [Spring for Apache Kafka](https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#messaging.kafka)
-* [Apache Kafka Streams Support](https://docs.spring.io/spring-kafka/docs/current/reference/html/#streams-kafka-streams)
-* [Apache Kafka Streams Binding Capabilities of Spring Cloud Stream](https://docs.spring.io/spring-cloud-stream/docs/current/reference/htmlsingle/index.html#_kafka_streams_binding_capabilities_of_spring_cloud_stream)
-* [Cloud Stream](https://docs.spring.io/spring-cloud-stream/docs/current/reference/html/spring-cloud-stream.html#spring-cloud-stream-overview-introducing)
+
 
 ### Guides
 The following guides illustrate how to use some features concretely:
