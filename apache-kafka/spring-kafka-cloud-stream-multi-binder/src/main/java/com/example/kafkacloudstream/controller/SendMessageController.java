@@ -19,7 +19,7 @@ public class SendMessageController {
   public Mono<ResponseEntity<String>> sendMessage() {
 
 
-   // this.produceEvents.sendReport("I send Message.. for report-out-0:  ");
+//    this.produceEvents.sendReport("I send Message.. for report-out-0: test 2-05-2014 ");
     this.produceEvents.sendPayment("I send Message.. payment-out-0: ");
 
 

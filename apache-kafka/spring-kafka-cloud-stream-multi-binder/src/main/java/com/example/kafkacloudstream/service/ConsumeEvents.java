@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class ConsumeEvents {
-
+/*
 
     @Bean
     public Consumer<Message<String>> receive() {
@@ -21,7 +21,7 @@ public class ConsumeEvents {
 
     public void processMessage(Message<String> message) {
       log.info("Receiving payment " + message);
-    }
+    }*/
 
     @Bean
     public Consumer<Message<String>> consume() {
@@ -30,7 +30,7 @@ public class ConsumeEvents {
     }
 
     public void processMessageConsume(Message<String> message) {
-      log.info("Receiving report" + message.getPayload());
+      log.info("Receiving report" + message);
     }
 
 
