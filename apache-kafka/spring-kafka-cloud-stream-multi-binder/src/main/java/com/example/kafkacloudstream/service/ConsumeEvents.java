@@ -11,29 +11,26 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class ConsumeEvents {
-/*
-
-    @Bean
-    public Consumer<Message<String>> receive() {
-      log.info(" Consumer<Message<String>> receive");
-      return this::processMessage;
-    }
-
-    public void processMessage(Message<String> message) {
-      log.info("Receiving payment " + message);
-    }*/
-
-    @Bean
-    public Consumer<Message<String>> consume() {
-      log.info(" Consumer<Message<String>> consume");
-      return this::processMessageConsume;
-    }
-
-    public void processMessageConsume(Message<String> message) {
-      log.info("Receiving report" + message);
-    }
 
 
+  @Bean
+  public Consumer<Message<String>> receive() {
+    return this::processMessage;
+  }
+
+  public void processMessage(Message<String> message) {
+    log.info("Receiving payment payload: {}", message.getPayload());
+    log.info("Receiving payment header: {}", message.getHeaders());
+  }
+
+  @Bean
+  public Consumer<Message<String>> consume() {
+    return this::processMessageConsume;
+  }
+
+  public void processMessageConsume(Message<String> message) {
+    log.info("Receiving queue report:" + message);
+  }
 
 
 }
